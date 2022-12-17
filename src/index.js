@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import Bio from "./Bio.js";
 import reportWebVitals from './reportWebVitals';
+import OpenSans from './Fonts/OpenSans/OpenSans-Regular.ttf'
+import OpenSansBold from './Fonts/OpenSans/OpenSans-Bold.ttf'
+import { createGlobalStyle } from "styled-components";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const FontStyle = createGlobalStyle` 
+@font-face {
+  font-family: 'OpenSans';
+  src: url(${OpenSans}) format('truetype');
+};
+font-family: OpenSans;
+caret-color: transparent !important;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url(${OpenSansBold}) format('truetype');
+  };
+  font-family: OpenSansBold;
+  caret-color: transparent !important;`
+
+
+    ReactDOM.render(
+        <React.StrictMode>
+            <FontStyle />
+            <Bio />
+        </React.StrictMode>,
+        document.getElementById('root')
+    )
+
 reportWebVitals();
