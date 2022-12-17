@@ -26,6 +26,11 @@ caret-color: transparent !important;
   caret-color: transparent !important;`
 
 const Box = styled.div`
+display : flex;
+flex-direction : row-reverse;
+justify-content : center;
+align-items : center;
+column-gap: 32px;
 @media only screen and (max-width : 720px){
     display : flex;
     flex-direction : column;
@@ -34,13 +39,21 @@ const Box = styled.div`
 }
 `
 
+const Box1 = styled.div`
+display : flex;
+flex-direction : column;
+row-gap:32px;
+`
+
     ReactDOM.render(
         <React.StrictMode>
+            <FontStyle />
+            <Bio />
             <Box>
-                <FontStyle />
-                <Bio />
-                <Portofolios />
-                <Education />
+                <Box1>
+                    <Portofolios />
+                    <Education />
+                </Box1>
                 <Work />
             </Box>
         </React.StrictMode>,
