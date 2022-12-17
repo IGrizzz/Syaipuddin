@@ -123,7 +123,7 @@ return(
                 <Sayurmatua href="https://sayurmatua.netlify.app">
                     Sayurmatua Website
                 </Sayurmatua>
-                <SICovid href="SayurmatuaBox>">
+                <SICovid href="https://sicovid7.netlify.app">
                     SICovid
                 </SICovid>
                 <Sevenphone href="https://sevenphones.netlify.app">
