@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import OpenSans from './Fonts/OpenSans/OpenSans-Regular.ttf'
 import OpenSansBold from './Fonts/OpenSans/OpenSans-Bold.ttf'
 import { createGlobalStyle } from "styled-components";
+import Portofolios from "./Portofolios.js";
 
 const FontStyle = createGlobalStyle` 
 @font-face {
@@ -26,6 +27,7 @@ caret-color: transparent !important;
         <React.StrictMode>
             <FontStyle />
             <Bio />
+            <Portofolios />
         </React.StrictMode>,
         document.getElementById('root')
     )
