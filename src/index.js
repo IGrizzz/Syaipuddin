@@ -6,6 +6,7 @@ import OpenSans from './Fonts/OpenSans/OpenSans-Regular.ttf'
 import OpenSansBold from './Fonts/OpenSans/OpenSans-Bold.ttf'
 import { createGlobalStyle } from "styled-components";
 import Portofolios from "./Portofolios.js";
+import Education from "./Education.js";
 
 const FontStyle = createGlobalStyle` 
 @font-face {
@@ -28,6 +29,7 @@ caret-color: transparent !important;
             <FontStyle />
             <Bio />
             <Portofolios />
+            <Education />
         </React.StrictMode>,
         document.getElementById('root')
     )
