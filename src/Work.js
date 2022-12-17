@@ -7,11 +7,13 @@ width : 595px;
 height : 506px;
 background : url(${boxWork}) no-repeat;
 background-size : 595px 506px;
+display : flex;
+flex-direction : column;
 `
 const WorkText = styled.h1`
 font-size: 36px;
 padding-left: 140px;
-padding-top : 22px;
+}
 `
 const Work1 = styled.div`
 padding-left 60px;  

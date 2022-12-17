@@ -8,6 +8,7 @@ import { createGlobalStyle } from "styled-components";
 import Portofolios from "./Portofolios.js";
 import Education from "./Education.js";
 import Work from "./Work.js";
+import styled from "styled-components"
 
 const FontStyle = createGlobalStyle` 
 @font-face {
@@ -24,14 +25,24 @@ caret-color: transparent !important;
   font-family: OpenSansBold;
   caret-color: transparent !important;`
 
+const Box = styled.div`
+@media only screen and (max-width : 720px){
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    row-gap: 12px;
+}
+`
 
     ReactDOM.render(
         <React.StrictMode>
-            <FontStyle />
-            <Bio />
-            <Portofolios />
-            <Education />
-            <Work />
+            <Box>
+                <FontStyle />
+                <Bio />
+                <Portofolios />
+                <Education />
+                <Work />
+            </Box>
         </React.StrictMode>,
         document.getElementById('root')
     )

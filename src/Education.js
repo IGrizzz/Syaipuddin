@@ -9,12 +9,14 @@ background : url(${boxEdu}) no-repeat;
 background-size : 595px;
 height : 280px;
 font-family : OpenSansBold;
+display : flex;
+flex-direction : column;
 `
 
 const EduText = styled.h1`
 font-size: 36px;
-padding-left: 140px;
-padding-top : 22px;
+padding-left: 140px;S
+}
 `
 
 const EduDesc = styled.div`
